@@ -24,26 +24,56 @@
     <!-- Tailwind CSS Cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="font-[Bebas_Neue]">
-    <header class="max-w-[80%] mx-auto">
-      <nav class="flex justify-between items-center mt-[39px]">
-        <div class="md:w-56">
-          <img class="w-[291px]" src="./icons/logo.png" alt="logo" />
-        </div>
-        <div class="hidden md:block">
-          <ul class="flex gap-[57px] font-[roboto] text-[#3C3C3C] font-medium leading-[24px] md:gap-[20px]">
-            <li class="nav-items"><a href="" class="nav-links">Home</a></li>
-            <li class="nav-items"><a href="" class="nav-links">Product</a></li>
-            <li class="nav-items"><a href="" class="nav-links">About us</a></li>
-            <li class="nav-items"><a href="" class="nav-links">Contact us</a>
-            </li>
-          </ul>
-        </div>
+  <body class="font-[Bebas_Neue] box-border">
+    <header class="bg-[#FFFBF0]">
+      <div class="max-w-[80%] mx-auto">
+        <!-- Navbar start here -->
+        <nav class="flex justify-between items-center pt-[39px]">
+          <img
+            class="w-[291px] md:w-56 lg:w-[291px]"
+            src="./icons/logo.png"
+            alt="logo"
+          />
+          <div class="hidden md:block">
+            <ul
+              class="flex gap-[57px] font-[roboto] text-[#3C3C3C] font-medium leading-[24px] md:gap-[20px] lg:gap-[57px]"
+            >
+              <li><a href="" class="nav-links">Home</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="block md:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <!-- Navbar end here -->
+        <section class="flex flex-col gap-6 md:flex-row items-center pt-5 pb-[129px]">
+          <div class="">
+            <h1 class="text-[#FABE4C] text-5xl xl:text-[80px]">
+              Be the Penguins <br><span class="text-[#363958]">of Winter</span>
+            </h1>
+            <p class="text-[#3E3E3E] font-[roboto] mb-2">
+              Lorem Ipsum is simply dummy text of the printing <br>and typesetting
+              industry.
+            </p>
+            <button
+              class="ont-[roboto] font-medium text-white py-4 px-8 bg-[linear-gradient(to_bottom,rgba(164,188,70,1),rgba(133,160,25,1))] rounded-[10px]"
+            >
+              <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+            </button>
+          </div>
+          <div class="xl:ml-[220px] 2xl:ml-[500px]">
+            <!-- <div class="max-[600px]:bg-sky-300 min-[320px]:text-center"></div> -->
+            <img class="w-full" src="./images/model.png" alt="model" />
+          </div>
+        </section>
+      </div>
 
-        <div class="block md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
+      <!-- banner start here -->
+
+      <!-- banner end here -->
     </header>
     <main></main>
     <footer></footer>
