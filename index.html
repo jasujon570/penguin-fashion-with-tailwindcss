@@ -4,13 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind CSS Cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body></body>
+  <body class="font-[Bebas_Neue]">
+    <header class="max-w-[80%] mx-auto">
+      <nav class="flex justify-between items-center mt-[39px]">
+        <div class="md:w-56">
+          <img class="w-[291px]" src="./icons/logo.png" alt="logo" />
+        </div>
+        <div class="hidden md:block">
+          <ul class="flex gap-[57px] font-[roboto] text-[#3C3C3C] font-medium leading-[24px] md:gap-[20px]">
+            <li class="nav-items"><a href="" class="nav-links">Home</a></li>
+            <li class="nav-items"><a href="" class="nav-links">Product</a></li>
+            <li class="nav-items"><a href="" class="nav-links">About us</a></li>
+            <li class="nav-items"><a href="" class="nav-links">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
